@@ -4,7 +4,7 @@
 
 > **Error:** Falta calibrar cuándo cambia de color.
 
-[!error]
+[!ERROR]
 Falta calibrar cuándo cambia de color.
 
 `Error: Falta calibrar cuándo cambia de color.`
