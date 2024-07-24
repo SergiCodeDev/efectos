@@ -1,0 +1,7 @@
+header{
+    h1,
+    p{
+        color: currentColor;
+        transition: color 200ms ease-in-out;
+    }
+}

@@ -1,2 +1,1 @@
-# efectos-js
-galería de efectos
+# Galería de efectos

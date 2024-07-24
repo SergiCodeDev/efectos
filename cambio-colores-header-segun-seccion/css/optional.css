@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+header{
+    position:fixed ;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    h1{
+        margin-left: 3rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+main>div{
+    min-height: 100lvh;
+    width: 100%;
+}
+
+main>div:nth-child(1){
+    background-color: black;
+}
+main>div:nth-child(2){
+    background-color: white;
+}
+main>div:nth-child(3){
+    background-color: black;
+}
+main>div:nth-child(4){
+    background-color: white;
+}
+main>div:nth-child(5){
+    background-color: black;
+}
+main>div:nth-child(6){
+    background-color: white;
+}
