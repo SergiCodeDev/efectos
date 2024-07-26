@@ -1,0 +1,78 @@
+/* usar html para que afecte a la barra del scroll  */
+html {
+    /* color color */
+    scrollbar-color: black transparent;
+    /* tamaño */
+    scrollbar-width: thin;
+}
+
+.barra-lateral {
+    overflow-y: scroll;
+    /* fallback */
+    overflow-y: overlay;
+    /* preferido si es compatible */
+}
+
+.barra-lateral::-webkit-scrollbar {
+    width: 12px;
+    /* Ancho de la barra de desplazamiento */
+    height: 12px;
+    /* Alto de la barra de desplazamiento para scroll horizontal */
+}
+
+/* Fondo de la barra de desplazamiento */
+.barra-lateral::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color del fondo de la barra de desplazamiento */
+    border-radius: 10px;
+}
+
+/* Estilo del pulgar de la barra de desplazamiento */
+.barra-lateral::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color del pulgar */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    border: 3px solid #f1f1f1;
+    /* Borde del pulgar para crear un margen */
+}
+
+/* Estilo del pulgar de la barra de desplazamiento al pasar el mouse */
+.barra-lateral::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Cambio de color al pasar el mouse */
+}
+
+/* Personalización para Firefox */
+/* Ancho de la barra de desplazamiento */
+.scrollbar-custom {
+    scrollbar-width: thin;
+    /* Ancho fino de la barra de desplazamiento */
+    scrollbar-color: #888 #f1f1f1;
+    /* Color del pulgar y del fondo */
+}
+
+/* Personalización para Internet Explorer y Edge (Legacy) */
+
+/* Color de la barra de desplazamiento en IE y Edge heredado */
+.scrollbar-custom {
+    scrollbar-base-color: #888;
+    /* Color base de la barra de desplazamiento */
+    scrollbar-track-color: #f1f1f1;
+    /* Color del fondo de la barra de desplazamiento */
+    scrollbar-arrow-color: #555;
+    /* Color de las flechas */
+}
+
+/* Ocultar barra de desplazamiento en Webkit (Chrome, Safari) */
+.esconder-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ocultar barra de desplazamiento en Firefox */
+.esconder-scrollbar {
+    scrollbar-width: none;
+    /* Oculta la barra de desplazamiento */
+    -ms-overflow-style: none;
+    /* IE y Edge */
+}
